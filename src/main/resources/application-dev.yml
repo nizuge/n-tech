@@ -1,0 +1,14 @@
+config:
+  name: n-tech
+server:
+  port: 7777
+logging:
+  level:
+    root: info
+sdk:
+  host_ip: 192.168.10.132
+  port: 8000
+  token: GxSW-JKSD
+
+
+
