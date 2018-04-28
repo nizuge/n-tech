@@ -9,17 +9,22 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-/*@SpringBootApplication
+@SpringBootApplication
 @ServletComponentScan
-public class NTechApplication {
-	public static void main(String[] args) {
+public class NTechApplication extends SpringBootServletInitializer{
 
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+		return application.sources(NTechApplication.class);
+	}
+
+	public static void main(String[] args) {
 		SpringApplication.run(NTechApplication.class, args);
 	}
-}*/
+}
 
 
-@Configuration
+/*@Configuration
 @ComponentScan
 @EnableAutoConfiguration
 @SpringBootApplication
@@ -33,4 +38,4 @@ public class NTechApplication extends SpringBootServletInitializer {
 	public static void main(String[] args) {
 		SpringApplication.run(NTechApplication.class, args);
 	}
-}
+}*/
